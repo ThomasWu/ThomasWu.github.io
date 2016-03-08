@@ -4,6 +4,7 @@
   <head>
     <script src="angular.js"/></script>
     <script src="todo.js"></script>
+    <script src="countdown.js"></script>
     <link rel="stylesheet" href="todo.css">
   </head>
   <body>
@@ -26,9 +27,12 @@
         <input class="btn-primary" type="submit" value="add">
       </form>
     </div>
-  </body>
   -->
-    <h1>Thanks for visiting my site. Currently this page is under constuction. You will be redirect to my blog in <timer interval="1000" countdown="5">{{countdown}}</timer> secs...</h1>
+    <div ng-app ng-controller="CountDown">
+      <h1>Thanks for visiting my site. Currently this page is under constuction.
+      You will be redirect to my blog in {{time}} secs...</h1>
+    </div>
+    </body>
   <footer>
     <p>&copy; 2016 Chuanzhen Wu.</p>
   </footer>
